@@ -1,0 +1,60 @@
+<div class="row">
+<h1 class="title">Welcome to Marios Specialty Products</h1>
+
+<div class="col-md-6">
+<h2 class="second-title">All Products</h2>
+<% if @products.any? %>
+<ul>
+<% @products.each do |product| %>
+<li><%= link_to product.name, product_path(product) %></li>
+<% end %>
+</ul>
+<% else %>
+<p>There are no products yet.</p>
+<% end %>
+</div>
+
+
+<div class="col-md-6">
+<h2 class="second-title">Most Reviewed Products</h2>
+<% if @products.any? %>
+<ul>
+  <% @products.most_reviews.each do |product| %>
+  <li><%= link_to product.name, product_path(product) %></li>
+  <% end %>
+</ul>
+<% else %>
+<p>There are no recipes yet.</p>
+<% end %>
+</div>
+
+
+<h1 class="second-title">Most Recently Added Products</h1>
+<% if @products.any? %>
+<ul>
+  <% @products.three_recent.each do |product| %>
+  <li><%= link_to product.name, product_path(product) %></li>
+  <% end %>
+</ul>
+<% else %>
+<p>There are no recipes yet.</p>
+<% end %>
+
+
+<h1 class="second-title">Want to shop locally?</h1>
+<% if @products.any? %>
+<ul>
+  <% @products.made_in_the_usa.each do |product| %>
+  <li><%= link_to product.name, product_path(product) %></li>
+  <% end %>
+</ul>
+<% else %>
+<p>There are no recipes yet.</p>
+<% end %>
+</div>
+
+
+
+
+
+<h4 class="butt"><%= link_to 'Add New Product', new_product_path %></h4>
