@@ -1,17 +1,19 @@
+
 <!DOCTYPE html>
 <html>
 <head>
   <title>Marios Products</title>
   <%= csrf_meta_tags %>
   <%= csp_meta_tag %>
-  <link rel="stylesheet" href="/recipes.css">
+  <link rel="stylesheet" href="/products.css">
 
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 </head>
 
 <body>
-<div class="top-nav">
+<div class="nav-bar-top">
+<span class="nav-bar-title">Marios Specialty Products</span>
 </div>
   <div class="container">
     <%= flash[:alert] %>

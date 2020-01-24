@@ -34,11 +34,24 @@ label {
     padding-bottom: 80px;
 }
 
-.title {
-    font-size: 40px;
+.nav-bar-top {
+    min-width: 100%;
+    background-color: #7F1903;
+    height: 85px;
 }
 
+.nav-bar-title {
+    color: white;
+    font-size: 28px;
+    float: right;
+    padding-right: 50px;
+    padding-top: 25px;
+}
 
 .second-title {
     font-size: 26px;
+}
+
+.title {
+    font-size: 40px;
 }
