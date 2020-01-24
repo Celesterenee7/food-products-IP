@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_01_24_230529) do
+ActiveRecord::Schema.define(version: 2020_01_24_234029) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -38,6 +38,7 @@ ActiveRecord::Schema.define(version: 2020_01_24_230529) do
     t.string "password_hash"
     t.string "password_salt"
     t.boolean "admin", default: false
+    t.integer "user_id"
   end
 
   add_foreign_key "reviews", "products"

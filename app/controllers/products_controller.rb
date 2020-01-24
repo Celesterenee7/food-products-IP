@@ -1,4 +1,16 @@
 class ProductsController < ApplicationController
+  # before_action :admin_access, only: [:new, :edit, :update, :create, :destroy]
+
+  before_action :authenticate_user!
+  before_action do 
+    redirect_to new_user_session_path unless current_user && current_user.admin?
+  end
+ 
+
+  def admin?
+    self.admin == true
+  end
+
   def index
       @products = Product.all
       render :index
