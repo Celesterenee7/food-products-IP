@@ -1,52 +1,52 @@
 class ProductsController < ApplicationController
   def index
-    @products = Product.all
-    render :index
+      @products = Product.all
+      render :index
   end
-  
+
   def show
     @product = Product.find(params[:id])
     render :show
   end
-      
+    
   def new
     @product = Product.new
     render :new
   end
-  
+
   def edit
     @product = Product.find(params[:id])
     render :edit
   end
-      
+    
   def create
     @product = Product.new(product_params)
     if @product.save
-        flash[:notice] = "Product successfully added!"
-        redirect_to products_path
+      flash[:notice] = "Product successfully added!"
+      redirect_to products_path
     else
-        render :new
+      render :new
     end
   end
-      
+    
   def update
     @product = Product.find(params[:id])
     if @product.update(product_params)
-        redirect_to products_path
+      redirect_to products_path
     else
-        render :edit
+      render :edit
     end
   end
-      
+    
   def destroy
     @product = Product.find(params[:id])
     @product.destroy
-      redirect_to products_path
+    redirect_to products_path
   end
-  
+
   private
   def product_params
-      params.require(:product).permit(:name, :cost, :country_of_origin)
+    params.require(:product).permit(:name, :cost, :country_of_origin)
   end
-  
+
 end
