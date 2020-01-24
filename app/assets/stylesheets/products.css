@@ -34,6 +34,11 @@ label {
     padding-bottom: 80px;
 }
 
+.flash {
+    font-size: 30px;
+    color: green !important;
+}
+
 .nav-bar-top {
     min-width: 100%;
     background-color: #7F1903;

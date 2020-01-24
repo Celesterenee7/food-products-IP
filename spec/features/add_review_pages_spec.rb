@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe "the add a review process"
-  it "adds a review to a product" do
+describe "the add a review process" do
+
 
 end
