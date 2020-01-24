@@ -58,6 +58,7 @@ group :development, :test do
   gem 'launchy'
   # ~NH~ ADDED FOLLOWING GEM AFTER NEW.
   gem 'pry'
+  gem 'capybara'
 end
 
 group :development do
