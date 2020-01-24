@@ -31,15 +31,9 @@ class UsersController < ApplicationController
     render :edit
   end
   
-  def patch
-    @user = User.find(params[:id])
-    @user.profile_picture.attach(params[:user][:profile_picture])
-    redirect_to user_path
-  end
-  
   private
   
   def user_params
-    params.require(:user).permit(:email, :password, :password_confirmation, :admin, :profile_picture)
+    params.require(:user).permit(:email, :password, :password_confirmation, :admin)
   end
 end

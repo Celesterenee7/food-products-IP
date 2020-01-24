@@ -14,4 +14,12 @@ class ApplicationController < ActionController::Base
       redirect_to '/'
     end
   end
+
+  def admin_only
+    if !current_user.admin
+      flash[:alert] = "You do not have admin access to visit this page"
+        redirect_to '/'
+  end
+ end
+
 end

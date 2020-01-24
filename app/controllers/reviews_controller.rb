@@ -43,8 +43,6 @@ def destroy
   redirect_to product_path(@review.product)
 end
 
-# Other controller actions go here.
-
 private
   def review_params
     params.require(:review).permit(:author, :rating, :content_body)
