@@ -1,0 +1,44 @@
+* {}
+
+a {
+    font-size: 23px;
+    color: #9B0909;
+    text-decoration: none !important;
+    font-style: italic;
+    font-weight: 500;
+}
+
+a:hover {
+    color: #F9A113 !important;
+}
+
+
+ul {
+    list-style: none;
+}
+
+label {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.basic-text {
+    font-size: 18px;
+    font-weight: 600;
+    color: #9B0909;
+}
+
+.container {
+    padding-top: 80px;
+    padding-left: 300px !important;
+    padding-bottom: 80px;
+}
+
+.title {
+    font-size: 40px;
+}
+
+
+.second-title {
+    font-size: 26px;
+}

@@ -42,7 +42,6 @@ class ReviewsController < ApplicationController
     redirect_to product_path(@review.product)
   end
   
-  # Other controller actions go here.
   
   private
     def review_params
