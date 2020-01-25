@@ -1,6 +1,6 @@
 class ReviewsController < ApplicationController
-  before_action :admin_only, only: [:new, :edit, :update, :create, :destroy]
-  
+  before_action :admin_only, only: [:edit, :update, :destroy]
+
   def new
     @product = Product.find(params[:product_id])
     @review = @product.reviews.new

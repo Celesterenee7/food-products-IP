@@ -1,8 +1,11 @@
-* {}
+* {
+    font-family: 'Cabin', sans-serif;
+    letter-spacing: 0.1em;
+}
 
 a {
     font-size: 23px;
-    color: #9B0909;
+    color: #749604;
     text-decoration: none !important;
     font-style: italic;
     font-weight: 500;
@@ -25,23 +28,38 @@ label {
 .basic-text {
     font-size: 18px;
     font-weight: 600;
-    color: #9B0909;
+    color: #749604;
 }
+
+/* .btn-info {
+    background-color: #03636F !important;
+    color: white !important;
+    padding: 12px 25px !important;
+    letter-spacing: 0.1em;
+    font-size: 13px;
+    border-radius: 5px;
+} */
+
 
 .container {
     padding-top: 80px;
-    padding-left: 300px !important;
     padding-bottom: 80px;
+}
+
+.error {
+    font-size: 30px;
+    color: red !important;
 }
 
 .flash {
     font-size: 30px;
-    color: green !important;
+    color: red !important;
 }
+
 
 .nav-bar-top {
     min-width: 100%;
-    background-color: #7F1903;
+    background-color: #749604;
     height: 85px;
 }
 
