@@ -1,8 +1,7 @@
-<div class="row col-md-12 top">
-<h1 class="title"><%= @product.name %></h1>
-</div>
 <div class="row">
 <div class="col-md-6">
+<h1 class="title"><%= @product.name %></h1>
+<br>
 <h4 class="second-title">Reviews for this product:</h4>
 <% if @product.reviews.any? %>
 
@@ -20,30 +19,26 @@
 <br>
 <p><%= link_to "Add a review", new_product_review_path(@product) %></p>
 </div>
-
+<br>
+<br>
+<br>
+<br>
 <div class="col-md-6">
-
 <% if @product.cost != nil %>
 <h3 class="second-title"><%= @product.name %> Costs:</h3>
-
 <p>$<%= @product.cost %></p>
-
 <% else %>
 <h4>There are no costs listed for this product yet!</h4>
-
 <% end %>
 </div>
-
+<br>
+<br>
 <div class="col-md-6">
-
 <% if @product.country_of_origin != nil %>
 <h3 class="second-title">This product comes from:</h3>
-
 <p><em><%= @product.country_of_origin %></em></p>
-
 <% else %>
 <h4>There are no origins listed for this product yet!</h4>
-
 <% end %>
 </div>
 </div>
