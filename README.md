@@ -2,7 +2,7 @@
 #### Rails Authentication and Authorization for Epicodus, 1/24/20
 #### By Celeste Renee Morton
 ## Description:
-The concept for this project is to build a website for Mario's Specialty Food Products that will track unique visitors each day using the most comprehensive validations and callbacks to ensure information is properly saved and formatted in the database. It will also allow Mario to create users and restrict what they can and cannot do within the site. Only admins have access to full CRUD functionality and can edit, update , or delete products from the website. Non admins will only be allowed to see available products as well as leave a review for a product.
+The concept for this project is to build a website for Mario's Specialty Food Products that will track unique visitors each day using the most comprehensive validations and callbacks to ensure information is properly saved and formatted in the database. It will also allow Mario to create users and restrict what they can and cannot do within the site. Only admins have access to full CRUD functionality and can edit, update, or delete products from the website. Non admins will only be allowed to see available products as well as leave a review for a product.
 
 ## User Stories:
 * As an admin, I should be able to log in and log out of the application.
