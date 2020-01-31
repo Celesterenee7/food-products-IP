@@ -29,21 +29,15 @@ gem 'bcrypt', '~> 3.1.7'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
-
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
-
-# ~NH~ ADDED FOLLOWING GEM AFTER NEW.
 gem 'jquery-rails'
-# ~NH~ ADDED FOLLOWING GEM AFTER NEW.
 gem 'bootstrap-sass', '~> 3.4.1'
-# ~NH~ ADDED FOLLOWING GEM AFTER NEW.
 # DATABASE Seeder
 gem 'faker'
-# ~NH~ ADDED FOLLOWING GEM AFTER NEW.
 # Authentication and Authorization
 gem 'devise'
 
@@ -51,12 +45,8 @@ gem 'devise'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-
-  # ~NH~ ADDED FOLLOWING GEM AFTER NEW.
   gem 'rspec-rails'
-  # ~NH~ ADDED FOLLOWING GEM AFTER NEW.
   gem 'launchy'
-  # ~NH~ ADDED FOLLOWING GEM AFTER NEW.
   gem 'pry'
   gem 'capybara'
 end
@@ -70,7 +60,6 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
-# ~NH~ ADDED FOLLOWING TEST GEMS AFTER NEW.
 group :test do
   gem 'shoulda-matchers'
   gem 'capybara'
